@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 1887329}
   - component: {fileID: 1887328}
   - component: {fileID: 1887327}
+  - component: {fileID: 1887332}
   - component: {fileID: 1887331}
-  - component: {fileID: 1887330}
   m_Layer: 0
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -225,7 +225,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016328335, y: 0.0018198639}
+  m_Offset: {x: -0.02331388, y: 0.001819849}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -236,7 +236,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3330965, y: 0.6481098}
+  m_Size: {x: 2.8838952, y: 0.6481098}
   m_EdgeRadius: 0
 --- !u!61 &1887328
 BoxCollider2D:
@@ -247,7 +247,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1887324}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e3c4af1615ad2e741aa6c238745810c3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -276,7 +276,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -284,9 +284,24 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!255 &1887330
-FixedJoint2D:
+  m_Constraints: 4
+--- !u!114 &1887331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a09f9faf040c0446a32f72028dc38e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jogador: {fileID: 307862790}
+  teste: 0
+  _objetoFixado: 0
+--- !u!233 &1887332
+HingeJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -301,20 +316,14 @@ FixedJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.79, y: -1.16}
-  m_DampingRatio: 0
-  m_Frequency: 0
---- !u!114 &1887331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a09f9faf040c0446a32f72028dc38e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
 --- !u!1 &307862785
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +390,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &307862788
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -462,7 +471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 0}
-  _playerSpeed: 40
+  _playerSpeed: 80
+  aa: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +729,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1615488228}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b23bd70b0677ca549a960003e328b5fa, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

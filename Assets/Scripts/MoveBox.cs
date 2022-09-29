@@ -8,6 +8,7 @@ public class MoveBox : MonoBehaviour
     private float _movimentoHorizontal;
     private float _movimentoVertical;
     [SerializeField] private float _playerSpeed;
+    public bool aa;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,10 @@ public class MoveBox : MonoBehaviour
     void Update()
     {
         Movimento();
+        if (Input.GetMouseButtonDown(0))
+        {
+            aa = !aa;
+        }
     }
     private void Movimento()
     {

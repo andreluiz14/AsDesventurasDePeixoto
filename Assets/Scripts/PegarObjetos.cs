@@ -4,19 +4,37 @@ using UnityEngine;
 
 public class PegarObjetos : MonoBehaviour
 {
-    MoveBox jogador;
-    private FixedJoint2D objeto;
+    public MoveBox _jogador;
+    private HingeJoint2D _objeto;
+    public bool teste;
+    [SerializeField] private bool _objetoFixado = false;
     private void Start()
     {
-        objeto = gameObject.GetComponent<FixedJoint2D>();
+        _objeto = gameObject.GetComponent<HingeJoint2D>();
+        _objeto.enabled = false;
+    }
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            teste = true;
+        }
+        if (_objetoFixado)
+        {
+            _objeto.connectedBody = _jogador.playerRb;
+            _objeto.enabled = true;
+        }
     }
     private void OnTriggerStay2D(Collider2D outro)
     {
-        if (outro.CompareTag("Player") && Input.GetKey(KeyCode.Space))
+        if (outro.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
-            print("Colidiu");
-            //jogador.playerRb = jogador.GetComponent<Rigidbody2D>();
-            objeto.connectedBody = jogador.playerRb;
+            _objetoFixado = !_objetoFixado;
         }
+    }
+    private IEnumerator DelayDaFixacao()
+    {
+        yield return new WaitForSeconds(8);
+        _objetoFixado = true;
     }
 }
