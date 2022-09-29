@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 1887329}
   - component: {fileID: 1887328}
   - component: {fileID: 1887327}
+  - component: {fileID: 1887331}
+  - component: {fileID: 1887330}
   m_Layer: 0
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -283,6 +285,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!255 &1887330
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887324}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.79, y: -1.16}
+  m_DampingRatio: 0
+  m_Frequency: 0
+--- !u!114 &1887331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a09f9faf040c0446a32f72028dc38e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &307862785
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +330,7 @@ GameObject:
   - component: {fileID: 307862790}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,6 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897cae50caf2f5c45a5e41b517a1feb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRb: {fileID: 0}
   _playerSpeed: 40
 --- !u!1 &519420028
 GameObject:
