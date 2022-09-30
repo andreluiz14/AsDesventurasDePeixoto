@@ -19,8 +19,8 @@
                 {
                     "name": "",
                     "id": "fffccecc-cff4-4890-a41c-23ba8c44ce41",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold(duration=1.401298E-45)",
                     "processors": "",
                     "groups": "",
                     "action": "PegarObjetos",
