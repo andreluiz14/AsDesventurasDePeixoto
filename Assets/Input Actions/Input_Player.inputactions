@@ -1,0 +1,34 @@
+{
+    "name": "Input_Player",
+    "maps": [
+        {
+            "name": "Jogador",
+            "id": "9bf797e5-f4d1-4b37-80b5-edd87035117d",
+            "actions": [
+                {
+                    "name": "PegarObjetos",
+                    "type": "Button",
+                    "id": "a13a38ba-4e7a-425a-bc23-871846395566",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fffccecc-cff4-4890-a41c-23ba8c44ce41",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold(duration=1.401298E-45)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PegarObjetos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class PegarObjetos : MonoBehaviour
 {
-    MoveBox jogador;
-    private FixedJoint2D objeto;
+    [SerializeField] KeyCode _pegarObjeto;
+    [SerializeField] KeyCode _soltarObjeto;
+    [SerializeField] Rigidbody2D _objetoRb;
+    public MoveBox _jogador;
+    private HingeJoint2D _objeto;
+    private bool _estaPressionado = false;
     private void Start()
     {
-        objeto = gameObject.GetComponent<FixedJoint2D>();
+        _objeto = gameObject.GetComponent<HingeJoint2D>();
+        _objeto.enabled = false;
+    }
+    private void Update()
+    {
+
+        if (Input.GetKey(_soltarObjeto))
+        {
+            _objeto.enabled = false;
+            _objeto.connectedBody = null;
+        }
     }
     private void OnTriggerStay2D(Collider2D outro)
     {
-        if (outro.CompareTag("Player") && Input.GetKey(KeyCode.Space))
+        if(outro.gameObject.CompareTag("Player") && Input.GetKey(_pegarObjeto))
         {
-            print("Colidiu");
-            //jogador.playerRb = jogador.GetComponent<Rigidbody2D>();
-            objeto.connectedBody = jogador.playerRb;
+            _objeto.enabled = true;
+            _objeto.connectedBody = _jogador.jogadorRb;
+            _objetoRb.bodyType = RigidbodyType2D.Dynamic;
+
         }
     }
 }
