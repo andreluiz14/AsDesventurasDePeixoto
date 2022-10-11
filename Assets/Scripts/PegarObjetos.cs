@@ -9,7 +9,6 @@ public class PegarObjetos : MonoBehaviour
     [SerializeField] Rigidbody2D _objetoRb;
     public MoveBox _jogador;
     private HingeJoint2D _objeto;
-    private bool _estaPressionado = false;
     private void Start()
     {
         _objeto = gameObject.GetComponent<HingeJoint2D>();
@@ -31,7 +30,6 @@ public class PegarObjetos : MonoBehaviour
             _objeto.enabled = true;
             _objeto.connectedBody = _jogador.jogadorRb;
             _objetoRb.bodyType = RigidbodyType2D.Dynamic;
-
         }
     }
 }
