@@ -23,10 +23,6 @@ public class PuzzlePeso : MonoBehaviour
         {
             _objetoHJ.enabled = false;
         }
-        if (outro.gameObject.CompareTag("Player"))
-        {
-            _objetoHJ.breakForce = 400;
-        }
     }
     private void OnTriggerExit2D(Collider2D outro)
     {
@@ -34,11 +30,6 @@ public class PuzzlePeso : MonoBehaviour
         {
             _qtd--;
             print(_qtd);
-        }
-        if (outro.gameObject.CompareTag("Player"))
-        {
-            _objetoHJ.breakForce = 5;
-
         }
     }
 }
