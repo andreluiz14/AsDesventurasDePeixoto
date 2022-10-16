@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Daniel.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 9158561dd4de130468adc461ab7e58f8
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 6e510482c44ae664dbbf77ce564b12cb
   m_configObjects: {}
