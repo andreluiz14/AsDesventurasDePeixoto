@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4755285968898957640}
   m_Layer: 0
   m_Name: pedra_3
-  m_TagString: Untagged
+  m_TagString: Caixa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

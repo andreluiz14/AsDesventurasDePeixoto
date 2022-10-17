@@ -815,12 +815,13 @@ PolygonCollider2D:
       - {x: -17.682714, y: 2.4112792}
       - {x: -20.469082, y: 2.4112792}
       - {x: -31.828886, y: 1.4467676}
-      - {x: -34.72242, y: 1.1252637}
-      - {x: -38.687637, y: 0.58942384}
-      - {x: -38.794804, y: 0.48225585}
-      - {x: -43.510193, y: 0.58942384}
-      - {x: -44.79621, y: 0.6965918}
-      - {x: -47.796913, y: 1.1252637}
+      - {x: -34.548134, y: 0.9706445}
+      - {x: -37.131413, y: 0.5378841}
+      - {x: -38.981544, y: 0.3405242}
+      - {x: -42.95861, y: 0.33824578}
+      - {x: -44.153362, y: 0.39629078}
+      - {x: -45.767006, y: 0.49107963}
+      - {x: -48.348476, y: 0.89691854}
       - {x: -54.012653, y: 1.1252637}
       - {x: -59.263885, y: 1.0180957}
       - {x: -59.37105, y: 1.1252637}
@@ -8626,6 +8627,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1236992929109351703
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 479.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.9262733
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970678, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236992929194970679, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
+      propertyPath: m_Name
+      value: Puzzle Galho
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ce6b31f50ee6f842869c9537a17a879, type: 3}
 --- !u!1001 &8954853112932142466
 PrefabInstance:
   m_ObjectHideFlags: 0
