@@ -12,6 +12,8 @@ public class FishMove : MonoBehaviour
     [SerializeField]
     private float velocidadeMov;
 
+    private SpriteRenderer sprite;
+
 
 
    
@@ -22,6 +24,7 @@ public class FishMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Animator anim = GetComponent<Animator>(); 
+        sprite = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -34,6 +37,19 @@ public class FishMove : MonoBehaviour
         animator.SetFloat("horizontal", horizontal);
         animator.SetFloat("vertical", vertical);
         animator.SetFloat("Speed", direcao.sqrMagnitude);
+        Flip(horizontal);
 
+    }
+
+    private void Flip(float horizontal)
+    {
+        if(horizontal > 0)
+        {
+            sprite.flipX = false;
+        }
+        else if (horizontal < 0)
+        {
+            sprite.flipX = true;
+        }
     }
 }
