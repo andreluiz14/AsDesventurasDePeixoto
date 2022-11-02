@@ -6,11 +6,12 @@ public class PontoInicial : MonoBehaviour
 {
     [SerializeField] GameObject _prefabObjeto;
     [SerializeField] Vector3 _tamanhoGizmo;
+    [SerializeField] InstanciarObjeto _instanciarObjeto;
     private void OnTriggerEnter2D(Collider2D outro)
     {
         if (outro.CompareTag("Player"))
         {
-            _prefabObjeto.gameObject.SetActive(true);
+            _instanciarObjeto.InvocarMetodo();
         }
     }
     private void OnDrawGizmos()

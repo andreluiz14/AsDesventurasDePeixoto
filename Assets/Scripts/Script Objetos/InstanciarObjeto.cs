@@ -9,15 +9,22 @@ public class InstanciarObjeto : MonoBehaviour
     [SerializeField] float _atraso, _intervaloSpwan;
     void Start()
     {
-        InvokeRepeating("InstaciarObjeto", _atraso, _intervaloSpwan);
     }
-    private void InstaciarObjeto()
+    private void InstanciarObjetos()
     {
         Instantiate(_prefabObjeto, gameObject.transform.position, Quaternion.identity);
     }
-    private IEnumerator TempoInstaciar()
+    private IEnumerator TempoInstanciar()
     {
         yield return new WaitForSeconds(4);
-        InstaciarObjeto();
+        InstanciarObjetos();
+    }
+    public void InvocarMetodo()
+    {
+        InvokeRepeating("InstanciarObjetos", _atraso, _intervaloSpwan);
+    }
+    public void CancelarMetodo()
+    {
+        CancelInvoke("InstanciarObjetos");
     }
 }
