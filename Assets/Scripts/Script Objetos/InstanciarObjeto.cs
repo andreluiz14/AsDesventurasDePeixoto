@@ -6,10 +6,8 @@ public class InstanciarObjeto : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] GameObject _prefabObjeto;
+    private Vector3 _tamanhoGizmo = new Vector3(1,1,0);
     [SerializeField] float _atraso, _intervaloSpwan;
-    void Start()
-    {
-    }
     private void InstanciarObjetos()
     {
         Instantiate(_prefabObjeto, gameObject.transform.position, Quaternion.identity);
@@ -26,5 +24,10 @@ public class InstanciarObjeto : MonoBehaviour
     public void CancelarMetodo()
     {
         CancelInvoke("InstanciarObjetos");
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawCube(transform.position, _tamanhoGizmo);
     }
 }
