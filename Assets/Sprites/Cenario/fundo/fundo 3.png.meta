@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Sprites/Cenario/fundo/fundo 3.png.meta
-guid: 58db8e6643b721d49ac9cb1ab8ee6858
-========
-guid: dae8d3024d228e24c9de9a6959d8f801
->>>>>>>> 579ddc0c2d0e0d270b567059b9532cbe8006ee54:Assets/Sprites/Sprite Objetos/Garrafa_Quebrada.png.meta
+guid: a6b7ea6380cff604a89fe25d557ae890
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
