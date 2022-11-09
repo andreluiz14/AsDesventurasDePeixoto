@@ -7,7 +7,7 @@ public class PegarObjetos : MonoBehaviour
     [SerializeField] KeyCode _pegarObjeto;
     [SerializeField] KeyCode _soltarObjeto;
     [SerializeField] Rigidbody2D _objetoRb;
-    public MoveBox _jogador;
+    [SerializeField] FishMove _jogador;
     private HingeJoint2D _objeto;
     private void Start()
     {
@@ -28,7 +28,7 @@ public class PegarObjetos : MonoBehaviour
         if(outro.gameObject.CompareTag("Player") && Input.GetKey(_pegarObjeto))
         {
             _objeto.enabled = true;
-            _objeto.connectedBody = _jogador.jogadorRb;
+            _objeto.connectedBody = _jogador.rbJogador;
             _objetoRb.bodyType = RigidbodyType2D.Dynamic;
         }
     }

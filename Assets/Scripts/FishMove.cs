@@ -7,22 +7,17 @@ public class FishMove : MonoBehaviour
 
     public Animator animator;
     [SerializeField]
-    private Rigidbody2D rb;
+    public Rigidbody2D rbJogador;
 
     [SerializeField]
     private float velocidadeMov;
 
     private SpriteRenderer sprite;
-
-
-
-   
-
     // Update is called once per frame
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rbJogador = GetComponent<Rigidbody2D>();
         Animator anim = GetComponent<Animator>(); 
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -32,7 +27,7 @@ public class FishMove : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
 
         Vector2 direcao = new Vector2(horizontal, vertical);
-        this.rb.velocity = direcao * this.velocidadeMov;
+        this.rbJogador.velocity = direcao * this.velocidadeMov;
 
         animator.SetFloat("horizontal", horizontal);
         animator.SetFloat("vertical", vertical);

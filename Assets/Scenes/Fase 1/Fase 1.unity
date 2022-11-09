@@ -1098,7 +1098,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabObjeto: {fileID: 549050868}
-  _tamanhoGizmo: {x: 2, y: 10, z: 0}
+  _instanciarObjeto: {fileID: 549050870}
+  _boxCollider2D: {fileID: 243532652}
+  _AreaInteracao: {x: 1, y: 10, z: 0}
 --- !u!61 &243532652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1123,7 +1125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 10}
+  m_Size: {x: 1, y: 10}
   m_EdgeRadius: 0
 --- !u!1 &252672379
 GameObject:
@@ -3231,7 +3233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d1a574021a0414ba773e7aa92c88c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabObjeto: {fileID: 4755285968898957639, guid: 2428d5b8f29be8f468b53d8134905890, type: 3}
+  _prefabObjeto: {fileID: 4583748395835788928, guid: 46b7b48cc540e274cb8db55228b752a4, type: 3}
   _atraso: 4
   _intervaloSpwan: 3
 --- !u!1 &553286086
@@ -3877,8 +3879,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525affcb1df843f4da6be6b79c1d3482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _instanciarObjeto: {fileID: 549050870}
   _prefabObjeto: {fileID: 549050868}
-  _tamanhoGizmo: {x: 3, y: 3, z: 0}
+  _boxCollider2D: {fileID: 769532779}
+  _AreaInteracao: {x: 3, y: 3, z: 0}
 --- !u!61 &769532779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3903,7 +3907,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
 --- !u!1 &810511289
 GameObject:
@@ -4070,7 +4074,7 @@ SpriteRenderer:
   m_Size: {x: 155.45, y: 62.999752}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &825012598
@@ -4154,7 +4158,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &831477787 stripped
@@ -4582,7 +4586,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &877966975
@@ -9163,7 +9167,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1768961857
