@@ -23,6 +23,25 @@ public class FishMove : MonoBehaviour
     }
     void Update()
     {
+        Movimentacao();
+    }
+
+    private void Flip(float horizontal)
+    {
+        if (!GerenciadorObjetos.instance.estaComObjeto)
+        {
+            if(horizontal > 0)
+            {
+                sprite.flipX = false;
+            }
+            else if (horizontal < 0)
+            {
+                sprite.flipX = true;
+            }
+        }
+    }
+    private void Movimentacao()
+    {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
@@ -33,18 +52,5 @@ public class FishMove : MonoBehaviour
         animator.SetFloat("vertical", vertical);
         animator.SetFloat("Speed", direcao.sqrMagnitude);
         Flip(horizontal);
-
-    }
-
-    private void Flip(float horizontal)
-    {
-        if(horizontal > 0)
-        {
-            sprite.flipX = false;
-        }
-        else if (horizontal < 0)
-        {
-            sprite.flipX = true;
-        }
     }
 }

@@ -21,6 +21,7 @@ public class PegarObjetos : MonoBehaviour
         {
             _objeto.enabled = false;
             _objeto.connectedBody = null;
+            GerenciadorObjetos.instance.estaComObjeto = false;
         }
     }
     private void OnTriggerStay2D(Collider2D outro)
@@ -30,6 +31,7 @@ public class PegarObjetos : MonoBehaviour
             _objeto.enabled = true;
             _objeto.connectedBody = _jogador.rbJogador;
             _objetoRb.bodyType = RigidbodyType2D.Dynamic;
+            GerenciadorObjetos.instance.estaComObjeto = true;
         }
     }
 }
