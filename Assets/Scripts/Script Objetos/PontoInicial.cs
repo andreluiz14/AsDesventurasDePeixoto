@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class PontoInicial : MonoBehaviour
 {
+    [SerializeField] InstanciarObjeto _instanciarObjeto;
     [SerializeField] GameObject _prefabObjeto;
-    [SerializeField] Vector3 _tamanhoGizmo;
+    [SerializeField] BoxCollider2D _boxCollider2D;
+    [SerializeField] Vector3 _AreaInteracao;
     private void OnTriggerEnter2D(Collider2D outro)
     {
         if (outro.CompareTag("Player"))
         {
-            _prefabObjeto.gameObject.SetActive(true);
+            _instanciarObjeto.InvocarMetodo();
         }
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawCube(transform.position, _tamanhoGizmo);
+        _boxCollider2D.size = _AreaInteracao;
+        Gizmos.DrawCube(transform.position, _AreaInteracao);
     }
 }
