@@ -16,6 +16,11 @@ public class PegarObjetos : MonoBehaviour
     }
     private void Update()
     {
+        if (GerenciadorObjetos.instance.estaComObjeto)
+        {
+            _objetoRb.angularVelocity = 0;
+            
+        }
 
         if (Input.GetKey(_soltarObjeto))
         {
