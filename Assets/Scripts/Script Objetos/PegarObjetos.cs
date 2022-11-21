@@ -39,4 +39,11 @@ public class PegarObjetos : MonoBehaviour
             GerenciadorObjetos.instance.estaComObjeto = true;
         }
     }
+    private void OnTriggerEnter2D(Collider2D outro)
+    {
+        if (outro.gameObject.CompareTag("AreaToxica"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
