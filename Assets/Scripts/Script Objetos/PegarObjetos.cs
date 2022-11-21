@@ -41,7 +41,7 @@ public class PegarObjetos : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D outro)
     {
-        if (outro.gameObject.CompareTag("AreaToxica"))
+        if (outro.gameObject.CompareTag("Ventilador"))
         {
             Destroy(gameObject);
         }

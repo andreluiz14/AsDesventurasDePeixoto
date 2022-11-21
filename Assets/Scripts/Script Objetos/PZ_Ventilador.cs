@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PZ_Ventilador : MonoBehaviour
 {
+    [SerializeField] private GameObject _ventiladorParado;
+    [SerializeField] private Effector2D _effector2D;
     private HingeJoint2D _hJoint2D;
     private JointMotor2D _jointMotor2D;
     private void Start()
@@ -13,14 +15,28 @@ public class PZ_Ventilador : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D outro)
     {
-        if (outro.gameObject.CompareTag("Player") || outro.gameObject.CompareTag("Caixa"))
+        if (outro.gameObject.CompareTag("Player") )
         {
             PararMotor();
+        }else if (outro.gameObject.CompareTag("Caixa"))
+        {
+            PararMotor();
+            TrocarSprite();
+            DesativartEffector();
         }
     }
     private void PararMotor()
     {
         _jointMotor2D.motorSpeed = 0;
         _hJoint2D.motor = _jointMotor2D;
+    }
+    private void DesativartEffector()
+    {
+        _effector2D.enabled = false;
+    }
+    private void TrocarSprite()
+    {
+        _ventiladorParado.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }
