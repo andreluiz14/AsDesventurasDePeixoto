@@ -17,6 +17,7 @@ public class FishMove : MonoBehaviour
 
     private void Start()
     {
+        GerenciadorJogador.instance.estaVivo = true;
         rbJogador = GetComponent<Rigidbody2D>();
         Animator anim = GetComponent<Animator>(); 
         sprite = GetComponent<SpriteRenderer>();

@@ -18,6 +18,8 @@ public class PZ_Ventilador : MonoBehaviour
         if (outro.gameObject.CompareTag("Player") )
         {
             PararMotor();
+            GerenciadorJogador.instance.estaVivo = false;
+
         }else if (outro.gameObject.CompareTag("Caixa"))
         {
             PararMotor();
