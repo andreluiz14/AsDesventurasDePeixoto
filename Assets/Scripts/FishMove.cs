@@ -30,34 +30,15 @@ public class FishMove : MonoBehaviour
         Vector2 direcao = new Vector2(horizontal, vertical);
         this.rbJogador.velocity = direcao * this.velocidadeMov;
 
-        // Esses paramentros não exitem
-        /*
-        animator.SetFloat("horizontal", horizontal);
-        animator.SetFloat("vertical", vertical);
-        animator.SetFloat("Speed", direcao.sqrMagnitude);
-        */
+        
         if (GerenciadorObjetos.instance.estaComObjeto == false)
         {
-            if (vertical > 0)
-            {
-                Vector3 newRotation = new Vector3(0, 0, -90);
-                transform.eulerAngles = newRotation;
-            }
-            if (vertical < 0)
-            {
-                Vector3 newRotation = new Vector3(0, 0, 90);
-                transform.eulerAngles = newRotation;
-            }
-            if (horizontal > 0)
-            {
-                Vector3 newRotation = new Vector3(0, 180, 0);
-                transform.eulerAngles = newRotation;
-            }
+            float angle = Mathf.Atan2(vertical, horizontal) * Mathf.Rad2Deg;
+            Vector3 newRotation = new Vector3(0, 0, angle);
             if (horizontal < 0)
-            {
-                Vector3 newRotation = new Vector3(0, 0, 0);
-                transform.eulerAngles = newRotation;
-            }
+                newRotation = new Vector3(180, 0, -1*angle);
+            transform.eulerAngles = newRotation;
+           
         }
 
     }
