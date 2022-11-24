@@ -27,8 +27,11 @@ public class FishMove : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        Vector2 direcao = new Vector2(horizontal, vertical);
-        this.rbJogador.velocity = direcao * this.velocidadeMov;
+        if(GerenciadorJogador.instance.estaVivo == true)
+        {
+            Vector2 direcao = new Vector2(horizontal, vertical);
+            this.rbJogador.velocity = direcao * this.velocidadeMov;
+        }
 
         
         if (GerenciadorObjetos.instance.estaComObjeto == false)
