@@ -27,25 +27,23 @@ public class FishMove : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        if(GerenciadorJogador.instance.estaVivo == true)
+        if(GerenciadorJogador.instance.estaVivo == false)
+            rbJogador.velocity = Vector3.zero;
+
+        if (GerenciadorJogador.instance.estaVivo == true)
         {
             Vector2 direcao = new Vector2(horizontal, vertical);
             this.rbJogador.velocity = direcao * this.velocidadeMov;
-        }
 
-        
-        if (GerenciadorObjetos.instance.estaComObjeto == false)
-        {
-            float angle = Mathf.Atan2(vertical, horizontal) * Mathf.Rad2Deg;
-            Vector3 newRotation = new Vector3(0, 0, angle);
-            if (horizontal < 0)
-                newRotation = new Vector3(180, 0, -1*angle);
-            transform.eulerAngles = newRotation;
-           
-        }
 
+            if (GerenciadorObjetos.instance.estaComObjeto == false)
+            {
+                float angle = Mathf.Atan2(vertical, horizontal) * Mathf.Rad2Deg;
+                Vector3 newRotation = new Vector3(0, 0, angle);
+                if (horizontal < 0)
+                    newRotation = new Vector3(180, 0, -1 * angle);
+                transform.eulerAngles = newRotation;
+            }
+        }
     }
-
-
-    
 }
