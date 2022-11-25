@@ -4389,13 +4389,14 @@ GameObject:
   - component: {fileID: 623254855}
   - component: {fileID: 623254854}
   - component: {fileID: 623254853}
+  - component: {fileID: 623254856}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: CheckPoint
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &623254853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4420,7 +4421,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.0001, y: 0.0001}
   m_EdgeRadius: 0
 --- !u!212 &623254854
 SpriteRenderer:
@@ -4482,13 +4483,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623254852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 199.89, y: 0.7, z: 0}
+  m_LocalPosition: {x: 201.28, y: 0.4, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623254856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623254852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdd328fc61461b4ea930a053cfea056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boxCollider2D: {fileID: 623254853}
+  _AreaInteracao: {x: 0, y: 0, z: 0}
+  colorSelect: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &635791229
 GameObject:
   m_ObjectHideFlags: 0
@@ -9752,7 +9768,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 3270029586380376271, guid: acc99c6983b2eff45a7742da04b5c6bb, type: 3}
   m_PrefabInstance: {fileID: 1302921172}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1693458365
+--- !u!114 &1693458371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9761,7 +9777,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 525855730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2197ac420a5cbb04386480c51483652e, type: 3}
+  m_Script: {fileID: 11500000, guid: b1036a714b854cc44827a740d425dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {fileID: 180075104}

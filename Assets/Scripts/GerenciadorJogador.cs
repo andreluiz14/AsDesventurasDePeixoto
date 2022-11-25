@@ -8,6 +8,14 @@ public class GerenciadorJogador : MonoBehaviour
     public bool estaVivo;
     private void Awake()
     {
-        instance = this;
+        if(instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
     }
 }

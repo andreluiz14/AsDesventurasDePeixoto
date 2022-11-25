@@ -8,6 +8,14 @@ public class GerenciadorObjetos : MonoBehaviour
     public bool estaComObjeto;
     private void Awake()
     {
-        instance = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
     }
 }
