@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3270029586380376270}
   - component: {fileID: 3270029586380376266}
   - component: {fileID: 3270029586380376264}
+  - component: {fileID: 1693458371}
   m_Layer: 7
   m_Name: Jogador
   m_TagString: Player
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1561937058, guid: 092f5de6da71cbd41b375195e27d0f63, type: 3}
   m_Color: {r: 0.19209681, g: 0.3723321, b: 0.7169812, a: 1}
   m_FlipX: 0
@@ -160,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3270029586380376267}
-  rbJogador: {fileID: 0}
+  rbJogador: {fileID: 3270029586380376271}
   velocidadeMov: 4
 --- !u!114 &3270029586380376266
 MonoBehaviour:
@@ -187,3 +188,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8434391b94960d4e83f6801098074e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1693458371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270029586380376272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1036a714b854cc44827a740d425dbbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPos: {fileID: 3270029586380376268}
+  _tempoDeEspera: 4
