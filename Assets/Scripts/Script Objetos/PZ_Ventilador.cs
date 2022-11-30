@@ -24,6 +24,7 @@ public class PZ_Ventilador : MonoBehaviour
             PararMotor();
             TrocarSprite();
             DesativartEffector();
+            GerenciadorObjetos.instance.estaComObjeto = false;
         }
     }
     private void PararMotor()

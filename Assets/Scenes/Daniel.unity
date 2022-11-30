@@ -3638,7 +3638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1619604455
 Transform:
   m_ObjectHideFlags: 0
@@ -4236,6 +4236,10 @@ PrefabInstance:
       propertyPath: rbJogador
       value: 
       objectReference: {fileID: 210544987}
+    - target: {fileID: 3270029586380376270, guid: acc99c6983b2eff45a7742da04b5c6bb, type: 3}
+      propertyPath: velocidadeMov
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 3270029586380376271, guid: acc99c6983b2eff45a7742da04b5c6bb, type: 3}
       propertyPath: m_Interpolate
       value: 0

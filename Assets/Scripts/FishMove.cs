@@ -22,18 +22,23 @@ public class FishMove : MonoBehaviour
         Animator anim = GetComponent<Animator>(); 
         sprite = GetComponent<SpriteRenderer>();
     }
-    void Update()
+    void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        if(GerenciadorJogador.instance.estaVivo == false)
+        if (GerenciadorJogador.instance.estaVivo == false) { 
             rbJogador.velocity = Vector3.zero;
+            KillPlayer();
+        }
+
+        Debug.Log(GerenciadorObjetos.instance.estaComObjeto);
 
         if (GerenciadorJogador.instance.estaVivo == true)
         {
             Vector2 direcao = new Vector2(horizontal, vertical);
-            this.rbJogador.velocity = direcao * this.velocidadeMov;
+            //this.rbJogador.velocity = direcao * this.velocidadeMov;
+            this.rbJogador.velocity = direcao * this.velocidadeMov * Time.deltaTime;
 
 
             if (GerenciadorObjetos.instance.estaComObjeto == false)
@@ -45,5 +50,11 @@ public class FishMove : MonoBehaviour
                 transform.eulerAngles = newRotation;
             }
         }
+    }
+
+    public void KillPlayer()
+    {
+        animator.SetTrigger("killPlayer");
+        Debug.Log("Morreu");
     }
 }
