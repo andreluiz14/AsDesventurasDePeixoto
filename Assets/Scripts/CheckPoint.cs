@@ -27,7 +27,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (outro.gameObject.CompareTag("Respawn"))
         {
-            checkPointPos = playerPos.position;
+            SalvaPosicaoJogador();
         }
     }
     IEnumerator TempoRetorno()
@@ -41,5 +41,9 @@ public class CheckPoint : MonoBehaviour
         playerPos.position = checkPointPos;
         GerenciadorJogador.instance.estaVivo = true;
         _emCheckPoint = false;
+    }
+    private void SalvaPosicaoJogador()
+    {
+        checkPointPos = playerPos.position;
     }
 }
