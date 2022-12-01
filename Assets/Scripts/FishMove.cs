@@ -36,6 +36,7 @@ public class FishMove : MonoBehaviour
 
         if (GerenciadorJogador.instance.estaVivo == true)
         {
+            MovePlayerAin();
             Vector2 direcao = new Vector2(horizontal, vertical);
             //this.rbJogador.velocity = direcao * this.velocidadeMov;
             this.rbJogador.velocity = direcao * this.velocidadeMov * Time.deltaTime;
@@ -56,5 +57,9 @@ public class FishMove : MonoBehaviour
     {
         animator.SetTrigger("killPlayer");
         Debug.Log("Morreu");
+    }
+    public void MovePlayerAin()
+    {
+        animator.SetTrigger("MovePlayer");
     }
 }
