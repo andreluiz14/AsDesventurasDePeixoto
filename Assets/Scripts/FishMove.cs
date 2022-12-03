@@ -17,50 +17,49 @@ public class FishMove : MonoBehaviour
 
     private void Start()
     {
+        GerenciadorJogador.instance.estaVivo = true;
         rbJogador = GetComponent<Rigidbody2D>();
         Animator anim = GetComponent<Animator>(); 
         sprite = GetComponent<SpriteRenderer>();
     }
-    void Update()
+    void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        Vector2 direcao = new Vector2(horizontal, vertical);
-        this.rbJogador.velocity = direcao * this.velocidadeMov;
+        if (GerenciadorJogador.instance.estaVivo == false) { 
+            rbJogador.velocity = Vector3.zero;
+            KillPlayer();
+        }
 
-        // Esses paramentros não exitem
-        /*
-        animator.SetFloat("horizontal", horizontal);
-        animator.SetFloat("vertical", vertical);
-        animator.SetFloat("Speed", direcao.sqrMagnitude);
-        */
-        if (GerenciadorObjetos.instance.estaComObjeto == false)
+        Debug.Log(GerenciadorObjetos.instance.estaComObjeto);
+
+        if (GerenciadorJogador.instance.estaVivo == true)
         {
-            if (vertical > 0)
+            MovePlayerAin();
+            Vector2 direcao = new Vector2(horizontal, vertical);
+            //this.rbJogador.velocity = direcao * this.velocidadeMov;
+            this.rbJogador.velocity = direcao * this.velocidadeMov * Time.deltaTime;
+
+
+            if (GerenciadorObjetos.instance.estaComObjeto == false)
             {
-                Vector3 newRotation = new Vector3(0, 0, -90);
-                transform.eulerAngles = newRotation;
-            }
-            if (vertical < 0)
-            {
-                Vector3 newRotation = new Vector3(0, 0, 90);
-                transform.eulerAngles = newRotation;
-            }
-            if (horizontal > 0)
-            {
-                Vector3 newRotation = new Vector3(0, 180, 0);
-                transform.eulerAngles = newRotation;
-            }
-            if (horizontal < 0)
-            {
-                Vector3 newRotation = new Vector3(0, 0, 0);
+                float angle = Mathf.Atan2(vertical, horizontal) * Mathf.Rad2Deg;
+                Vector3 newRotation = new Vector3(0, 0, angle);
+                if (horizontal < 0)
+                    newRotation = new Vector3(180, 0, -1 * angle);
                 transform.eulerAngles = newRotation;
             }
         }
-
     }
 
-
-    
+    public void KillPlayer()
+    {
+        animator.SetTrigger("killPlayer");
+        Debug.Log("Morreu");
+    }
+    public void MovePlayerAin()
+    {
+        animator.SetTrigger("MovePlayer");
+    }
 }

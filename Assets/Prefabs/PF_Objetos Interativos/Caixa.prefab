@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4583748395835788957}
   - component: {fileID: 4583748395835788931}
   - component: {fileID: 5572611474421860446}
-  - component: {fileID: 9175846163204031578}
   m_Layer: 0
   m_Name: Caixa
   m_TagString: Caixa
@@ -170,16 +169,3 @@ PolygonCollider2D:
       - {x: 0.38, y: -0.775}
       - {x: 0.65, y: -0.675}
       - {x: 0.84999996, y: -0.645}
---- !u!114 &9175846163204031578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4583748395835788928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d952bd6b189a18948861dff51ddf4b86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tempoVidaObjeto: 10

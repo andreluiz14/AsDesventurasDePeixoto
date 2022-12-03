@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GerenciadorObjetos : MonoBehaviour
+public class GerenciadorJogador : MonoBehaviour
 {
-    public static GerenciadorObjetos instance;
-    public bool estaComObjeto;
+    public static GerenciadorJogador instance;
+    public bool estaVivo;
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if(instance != null && instance != this)
         {
             Destroy(gameObject);
         }
