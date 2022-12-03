@@ -162,7 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3270029586380376267}
   rbJogador: {fileID: 3270029586380376271}
-  velocidadeMov: 4
+  velocidadeMov: 200
 --- !u!114 &3270029586380376266
 MonoBehaviour:
   m_ObjectHideFlags: 0
