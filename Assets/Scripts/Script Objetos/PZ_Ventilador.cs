@@ -5,6 +5,7 @@ using UnityEngine;
 public class PZ_Ventilador : MonoBehaviour
 {
     [SerializeField] private GameObject _ventiladorParado;
+    [SerializeField] private GameObject _ventiladorGrade;
     [SerializeField] private Effector2D _effector2D;
     private HingeJoint2D _hJoint2D;
     private JointMotor2D _jointMotor2D;
@@ -38,6 +39,7 @@ public class PZ_Ventilador : MonoBehaviour
     }
     private void TrocarSprite()
     {
+        _ventiladorGrade.SetActive(false);
         _ventiladorParado.SetActive(true);
         this.gameObject.SetActive(false);
     }

@@ -32,7 +32,7 @@ public class FishMove : MonoBehaviour
             KillPlayer();
         }
 
-        Debug.Log(GerenciadorObjetos.instance.estaComObjeto);
+        //Debug.Log(GerenciadorObjetos.instance.estaComObjeto);
 
         if (GerenciadorJogador.instance.estaVivo == true)
         {
