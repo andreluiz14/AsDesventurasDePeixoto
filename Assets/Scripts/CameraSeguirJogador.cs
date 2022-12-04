@@ -10,13 +10,13 @@ public class CameraSeguirJogador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        size = gameObject.GetComponent<Camera>();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        size.orthographicSize = 8;
+  
         transform.position = _jogador.transform.position + new Vector3(0,0, -10);
     }
 }
