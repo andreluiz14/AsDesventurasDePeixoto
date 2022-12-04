@@ -5,12 +5,12 @@ using UnityEngine;
 public class InstanciarObjeto : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] GameObject _prefabObjeto;
+    [SerializeField] GameObject[] _prefabObjeto = new GameObject[4];
     private Vector3 _tamanhoGizmo = new Vector3(1,1,0);
     [SerializeField] float _atraso, _intervaloSpwan;
     private void InstanciarObjetos()
     {
-        Instantiate(_prefabObjeto, gameObject.transform.position, Quaternion.identity);
+        Instantiate(_prefabObjeto[Random.Range(0,4)], gameObject.transform.position, Quaternion.identity);
     }
     private IEnumerator TempoInstanciar()
     {
