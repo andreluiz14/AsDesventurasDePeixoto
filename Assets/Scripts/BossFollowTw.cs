@@ -31,6 +31,11 @@ public class BossFollowTw : MonoBehaviour
     [SerializeField]
     private LayerMask layerAreaVisao;
 
+    [SerializeField]
+    private float raioVisaoAnim;
+
+
+
 
 
 
@@ -38,18 +43,26 @@ public class BossFollowTw : MonoBehaviour
     private void Update()
     {
         ProcurarJogador();
-        if(this.alvo != null)
+
+
+        AbreBoca();
+
+
+    }
+    private void FixedUpdate()
+    {
+        if (this.alvo != null)
         {
             Mover();
         }
-
-        
-       
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(this.transform.position, this.raioVisao);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(this.transform.position, this.raioVisaoAnim);
+
     }
 
     private void ProcurarJogador()
@@ -58,6 +71,19 @@ public class BossFollowTw : MonoBehaviour
         if(colisor != null)
         {
             this.alvo = colisor.transform;
+        }
+    }
+
+    private void AbreBoca()
+    {
+        Collider2D colisor = Physics2D.OverlapCircle(this.transform.position, this.raioVisaoAnim, this.layerAreaVisao);
+        if(colisor != null)
+        {
+            animator.SetBool("morder", true);
+        }
+        else
+        {
+            animator.SetBool("morder", false);
         }
     }
 
@@ -73,7 +99,7 @@ public class BossFollowTw : MonoBehaviour
             Vector2 direcao = posicaoAlvo - posicaoAtual;
             direcao = direcao.normalized;
 
-            this.rigidbody.velocity = (this.velocidadeMovimento * direcao * Time.deltaTime);
+            this.rigidbody.velocity = (this.velocidadeMovimento * direcao * Time.fixedDeltaTime);
 
             if(this.rigidbody.velocity.x > 0)
             {
