@@ -115,7 +115,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_0
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 96
+        width: 417
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7d773562c12454abdcf5c1e0535b6d
+      internalID: 1769713057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_2
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 81
+        width: 357
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3f249345d0e5447ac04ecc42faebf0
+      internalID: -273668427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_3
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 99
+        width: 357
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d87c7d287138e24bb6af423cb7d0cc1
+      internalID: -1392127549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_4
+      rect:
+        serializedVersion: 2
+        x: 4849
+        y: 112
+        width: 339
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb06a0d859e0d784594e28c8d7da07ca
+      internalID: 186910317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 111
+        width: 339
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742a407dd3b0ade44ae34c09529efaf0
+      internalID: 1982581991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_6
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 110
+        width: 351
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d94bbcde360046bc4051a2963c801
+      internalID: -148033403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_7
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 72
+        width: 303
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98aa67e335a7d14d92b59edfe85557d
+      internalID: 1688493570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_8
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 92
+        width: 337
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a405375d13f434ea7a10649cb6f5fe
+      internalID: 337839966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_11
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 112
+        width: 289
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5b3257daaab9848991a2313bc60cc7
+      internalID: -2006569882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_12
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 112
+        width: 299
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed917df7124db34682176274a9ce85f
+      internalID: 1887812011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_13
+      rect:
+        serializedVersion: 2
+        x: 3695
+        y: 92
+        width: 300
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004544cafd115f9498e7b5e955543b77
+      internalID: -1145140537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_14
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 96
+        width: 299
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2047876a5a062d4c9f8defbb3753844
+      internalID: -712012401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zsprite_piranha_nadando_v3_15
+      rect:
+        serializedVersion: 2
+        x: 4462
+        y: 112
+        width: 322
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2b4b2a51686e5459bf6ff5262e0057
+      internalID: -1558798350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +399,94 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zsprite_piranha_nadando_v3_80: 1160023547
+      Zsprite_piranha_nadando_v3_53: -264632343
+      Zsprite_piranha_nadando_v3_39: 727673872
+      Zsprite_piranha_nadando_v3_64: 1377494760
+      Zsprite_piranha_nadando_v3_63: -1152219882
+      Zsprite_piranha_nadando_v3_76: 2020132079
+      Zsprite_piranha_nadando_v3_10: 1454131610
+      Zsprite_piranha_nadando_v3_16: 981923346
+      Zsprite_piranha_nadando_v3_77: -36121540
+      Zsprite_piranha_nadando_v3_17: -1600559690
+      Zsprite_piranha_nadando_v3_9: -76864080
+      Zsprite_piranha_nadando_v3_62: 456572345
+      Zsprite_piranha_nadando_v3_86: -2121455359
+      Zsprite_piranha_nadando_v3_29: 1947519122
+      Zsprite_piranha_nadando_v3_73: 1578665472
+      Zsprite_piranha_nadando_v3_81: 1903401890
+      Zsprite_piranha_nadando_v3_51: 84523613
+      Zsprite_piranha_nadando_v3_44: 594138869
+      Zsprite_piranha_nadando_v3_21: 1889067364
+      Zsprite_piranha_nadando_v3_33: 1690669056
+      Zsprite_piranha_nadando_v3_3: -1392127549
+      Zsprite_piranha_nadando_v3_56: -2087453541
+      Zsprite_piranha_nadando_v3_41: -2001972789
+      Zsprite_piranha_nadando_v3_68: 1500580680
+      Zsprite_piranha_nadando_v3_30: -1493676501
+      Zsprite_piranha_nadando_v3_50: 203826510
+      Zsprite_piranha_nadando_v3_19: -1085971032
+      Zsprite_piranha_nadando_v3_12: 1887812011
+      Zsprite_piranha_nadando_v3_1: 447164754
+      Zsprite_piranha_nadando_v3_15: -1558798350
+      Zsprite_piranha_nadando_v3_26: -918995041
+      Zsprite_piranha_nadando_v3_78: 24751590
+      Zsprite_piranha_nadando_v3_54: 1641719138
+      Zsprite_piranha_nadando_v3_61: -788856742
+      Zsprite_piranha_nadando_v3_20: 2039895871
+      Zsprite_piranha_nadando_v3_32: -148559154
+      Zsprite_piranha_nadando_v3_59: 698392053
+      Zsprite_piranha_nadando_v3_47: 54639942
+      Zsprite_piranha_nadando_v3_58: 331164574
+      Zsprite_piranha_nadando_v3_83: 737155360
+      Zsprite_piranha_nadando_v3_60: -30534714
+      Zsprite_piranha_nadando_v3_5: 1982581991
+      Zsprite_piranha_nadando_v3_82: -804499268
+      Zsprite_piranha_nadando_v3_55: 202930040
+      Zsprite_piranha_nadando_v3_2: -273668427
+      Zsprite_piranha_nadando_v3_6: -148033403
+      Zsprite_piranha_nadando_v3_43: -1678111447
+      Zsprite_piranha_nadando_v3_28: 246750106
+      Zsprite_piranha_nadando_v3_70: 306201925
+      Zsprite_piranha_nadando_v3_52: 1460784729
+      Zsprite_piranha_nadando_v3_42: 80562637
+      Zsprite_piranha_nadando_v3_13: -1145140537
+      Zsprite_piranha_nadando_v3_24: -1901841833
+      Zsprite_piranha_nadando_v3_85: 1034766537
+      Zsprite_piranha_nadando_v3_57: -543034690
+      Zsprite_piranha_nadando_v3_66: 1802309745
+      Zsprite_piranha_nadando_v3_8: 337839966
+      Zsprite_piranha_nadando_v3_7: 1688493570
+      Zsprite_piranha_nadando_v3_69: 820089168
+      Zsprite_piranha_nadando_v3_79: -770919064
+      Zsprite_piranha_nadando_v3_22: -1960577642
+      Zsprite_piranha_nadando_v3_11: -2006569882
+      Zsprite_piranha_nadando_v3_65: -518858774
+      Zsprite_piranha_nadando_v3_0: 1769713057
+      Zsprite_piranha_nadando_v3_49: 1035196093
+      Zsprite_piranha_nadando_v3_37: 1412110594
+      Zsprite_piranha_nadando_v3_40: 39421525
+      Zsprite_piranha_nadando_v3_36: 1433783874
+      Zsprite_piranha_nadando_v3_31: 1894897305
+      Zsprite_piranha_nadando_v3_25: -1876411711
+      Zsprite_piranha_nadando_v3_14: -712012401
+      Zsprite_piranha_nadando_v3_23: -886419854
+      Zsprite_piranha_nadando_v3_67: 524115858
+      Zsprite_piranha_nadando_v3_74: 1776218717
+      Zsprite_piranha_nadando_v3_75: -1972477998
+      Zsprite_piranha_nadando_v3_38: -252828587
+      Zsprite_piranha_nadando_v3_46: 1253489233
+      Zsprite_piranha_nadando_v3_18: 1151547415
+      Zsprite_piranha_nadando_v3_35: -1996624400
+      Zsprite_piranha_nadando_v3_72: -956718126
+      Zsprite_piranha_nadando_v3_4: 186910317
+      Zsprite_piranha_nadando_v3_84: 1644492427
+      Zsprite_piranha_nadando_v3_34: -2029482673
+      Zsprite_piranha_nadando_v3_48: -1978414182
+      Zsprite_piranha_nadando_v3_27: 1173156834
+      Zsprite_piranha_nadando_v3_71: -1440358797
+      Zsprite_piranha_nadando_v3_45: 1856405238
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

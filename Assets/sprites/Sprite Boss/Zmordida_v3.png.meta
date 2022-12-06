@@ -121,18 +121,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 33
-        width: 304
-        height: 233
+        y: 51
+        width: 400
+        height: 300
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a75acf3aff2a93479fac580995be46e
-      internalID: -1002580320
+      spriteID: e2b568ee9ad74f040bc930f8a195a17c
+      internalID: -516033155
       vertices: []
       indices: 
       edges: []
@@ -141,19 +141,19 @@ TextureImporter:
       name: Zmordida_v3_1
       rect:
         serializedVersion: 2
-        x: 385
-        y: 26
-        width: 303
-        height: 240
+        x: 400
+        y: 51
+        width: 400
+        height: 300
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28df5444e2631fb4fbcd46ae0b5bfffa
-      internalID: 1372274415
+      spriteID: 5febaa0fdffdcd940bc3a5fb459970c4
+      internalID: 277782888
       vertices: []
       indices: 
       edges: []
@@ -162,19 +162,19 @@ TextureImporter:
       name: Zmordida_v3_2
       rect:
         serializedVersion: 2
-        x: 751
-        y: 16
-        width: 303
-        height: 249
+        x: 800
+        y: 51
+        width: 400
+        height: 300
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f9228925c1457a4ea40a34dc1c7c8d1
-      internalID: -1328012182
+      spriteID: abacddb3c9ab3934a9d917065cb215bb
+      internalID: -1172760871
       vertices: []
       indices: 
       edges: []
@@ -183,19 +183,40 @@ TextureImporter:
       name: Zmordida_v3_3
       rect:
         serializedVersion: 2
-        x: 1095
-        y: 22
-        width: 329
-        height: 244
+        x: 1200
+        y: 51
+        width: 400
+        height: 300
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa33c716d7d5dac48a8f8d770de0dcaf
-      internalID: 1728649327
+      spriteID: aec646b0fbdd8474f950661ff26ed449
+      internalID: -550279871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zmordida_v3_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 51
+        width: 400
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28079e7c01ba7f440a33135b661f9d99
+      internalID: -743677092
       vertices: []
       indices: 
       edges: []
@@ -204,40 +225,19 @@ TextureImporter:
       name: Zmordida_v3_5
       rect:
         serializedVersion: 2
-        x: 1471
-        y: 26
-        width: 310
-        height: 240
+        x: 2000
+        y: 51
+        width: 400
+        height: 300
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5655c7c860cd6d5459bd8960fea0d64b
-      internalID: 206500985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zmordida_v3_6
-      rect:
-        serializedVersion: 2
-        x: 1798
-        y: 30
-        width: 342
-        height: 234
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 498083603e78a324797e152c81afb55e
-      internalID: -1172740060
+      spriteID: 279983e41c8ead74c8e8f51e8b5ba8e2
+      internalID: -915748193
       vertices: []
       indices: 
       edges: []
@@ -253,24 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Zmordida_v3_0: -1002580320
-      Zmordida_v3_5: 1372274415
-      Zmordida_v3_8: -1328012182
-      Zmordida_v3_3: 1728649327
-      Zmordida_v3_2: 1810381871
-      Zmordida_v3_7: 206500985
-      Zmordida_v3_1: -1172740060
-      Zmordida_v3_10: -613231758
-      Zmordida_v3_11: 322081164
-      Zmordida_v3_14: -101047137
-      Zmordida_v3_15: -115573213
-      Zmordida_v3_4: -1090924912
-      Zmordida_v3_12: -860941836
-      Zmordida_v3_17: 621817219
-      Zmordida_v3_9: 922983525
-      Zmordida_v3_13: -507360622
-      Zmordida_v3_6: 464333414
-      Zmordida_v3_16: 1479928386
+      Zmordida_v3_0: -516033155
+      Zmordida_v3_5: -915748193
+      Zmordida_v3_3: -550279871
+      Zmordida_v3_2: -1172760871
+      Zmordida_v3_1: 277782888
+      Zmordida_v3_4: -743677092
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
