@@ -19,10 +19,6 @@ public class BossFollowTw : MonoBehaviour
 
 
     [SerializeField]
-    private SpriteRenderer spriteRenderer;
-
-
-    [SerializeField]
     private float distanciaMinima;
 
     [SerializeField]
@@ -94,33 +90,18 @@ public class BossFollowTw : MonoBehaviour
         Vector2 posicaoAtual = this.transform.position;
 
         float distancia = Vector2.Distance(posicaoAtual, posicaoAlvo);
-        if(distancia >= this.distanciaMinima)
+        if (distancia >= this.distanciaMinima)
         {
             Vector2 direcao = posicaoAlvo - posicaoAtual;
             direcao = direcao.normalized;
 
             this.rigidbody.velocity = (this.velocidadeMovimento * direcao * Time.fixedDeltaTime);
 
-            if(this.rigidbody.velocity.x > 0)
-            {
-                this.spriteRenderer.flipX = false;
-            }
-            else if(this.rigidbody.velocity.x < 0)
-            {
-                this.spriteRenderer.flipX = true;
-            }
-            this.animator.SetBool("movendo", true);
-        }
-        else
-        {
-            PararMovimentacao();
+
         }
     }
 
-    private void PararMovimentacao()
-    {
-        this.animator.SetBool("movendo", false);
-    }
+   
 
     
 

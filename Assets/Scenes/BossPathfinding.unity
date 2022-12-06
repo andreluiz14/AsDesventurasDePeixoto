@@ -727,13 +727,12 @@ MonoBehaviour:
   velocidadeMovimento: 700
   rigidbody: {fileID: 531208297}
   animator: {fileID: 531208299}
-  spriteRenderer: {fileID: 0}
   distanciaMinima: 2
-  raioVisao: 10.6
+  raioVisao: 14.22
   layerAreaVisao:
     serializedVersion: 2
     m_Bits: 128
-  raioVisaoAnim: 9.8
+  raioVisaoAnim: 12.81
 --- !u!212 &531208294
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -775,12 +774,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1769713057, guid: e421e124f54ca7d4dab0ed27046cf34b, type: 3}
+  m_Sprite: {fileID: -516033155, guid: 43d7bbbd7e4296741952b1ad3817f76b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.06, y: 4}
+  m_Size: {x: 4, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -860,7 +859,7 @@ Animator:
   m_GameObject: {fileID: 531208291}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6129ba4257505c7409a2c95277ac6a70, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba4bebacbb79e0f4aaacaafe9e56158b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
