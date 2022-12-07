@@ -724,7 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alvo: {fileID: 0}
-  velocidadeMovimento: 700
+  velocidadeMovimento: 950
   rigidbody: {fileID: 531208297}
   animator: {fileID: 531208299}
   distanciaMinima: 2
