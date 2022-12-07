@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nave_Mash.unity
     guid: 6e510482c44ae664dbbf77ce564b12cb
+  - enabled: 1
+    path: Assets/Scenes/Menu/Menu.unity
+    guid: ca4afda94486e3c4bab5b915eb4fb5e1
   m_configObjects: {}
