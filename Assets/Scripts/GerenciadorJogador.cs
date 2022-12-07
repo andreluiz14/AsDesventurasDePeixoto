@@ -6,6 +6,7 @@ public class GerenciadorJogador : MonoBehaviour
 {
     public static GerenciadorJogador instance;
     public bool estaVivo;
+    public bool areaChefe = false;
     private void Awake()
     {
         if(instance != null && instance != this)
