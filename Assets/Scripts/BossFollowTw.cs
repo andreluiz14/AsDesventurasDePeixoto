@@ -6,6 +6,9 @@ public class BossFollowTw : MonoBehaviour
 {
     [SerializeField]
     private Transform alvo;
+    [SerializeField]
+    private Collider2D _bossCollider;
+    public float tempoTrigger;
 
     [SerializeField]
     private float velocidadeMovimento;
@@ -29,6 +32,8 @@ public class BossFollowTw : MonoBehaviour
 
     [SerializeField]
     private float raioVisaoAnim;
+    [SerializeField] 
+    private Vector3 posicaoInteracao;
 
 
 
@@ -36,6 +41,11 @@ public class BossFollowTw : MonoBehaviour
 
 
     // Update is called once per frame
+    private void Start()
+    {
+        _bossCollider = gameObject.GetComponent<Collider2D>();
+        _bossCollider.isTrigger = true;
+    }
     private void Update()
     {
         ProcurarJogador();
@@ -55,7 +65,7 @@ public class BossFollowTw : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(this.transform.position, this.raioVisao);
+        Gizmos.DrawWireSphere(posicaoInteracao, this.raioVisao);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(this.transform.position, this.raioVisaoAnim);
 
@@ -63,10 +73,11 @@ public class BossFollowTw : MonoBehaviour
 
     private void ProcurarJogador()
     {
-       Collider2D colisor = Physics2D.OverlapCircle(this.transform.position, this.raioVisao, this.layerAreaVisao);
+       Collider2D colisor = Physics2D.OverlapCircle(posicaoInteracao, this.raioVisao, this.layerAreaVisao);
         if(colisor != null)
         {
             this.alvo = colisor.transform;
+            StartCoroutine("AtivarCollider");
         }
     }
 
@@ -101,8 +112,9 @@ public class BossFollowTw : MonoBehaviour
         }
     }
 
-   
-
-    
-
+    private IEnumerator AtivarCollider()
+    {
+        yield return new WaitForSeconds(tempoTrigger);
+        _bossCollider.isTrigger = false;
+    }
 }

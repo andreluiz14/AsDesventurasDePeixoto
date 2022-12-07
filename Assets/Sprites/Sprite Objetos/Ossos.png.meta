@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e421e124f54ca7d4dab0ed27046cf34b
+guid: 1984de8fcfcd19e469c43417518101fe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,7 +103,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ossos_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 924
+        width: 1190
+        height: 996
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e0385a184b27a498656a4ddfcd0cc1
+      internalID: -894253383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ossos_1
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1407
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a73594d72cc00e4a82af26c3fdef76d
+      internalID: 44487451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ossos_2
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 834
+        width: 579
+        height: 1096
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2519780d8f02bec41857d4bf17b779e9
+      internalID: 1952034270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ossos_3
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1372
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb38ac1276b1db4a9388595ea9a5534
+      internalID: 575083290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ossos_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 139
+        width: 845
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553b07b5bb0824b41bac357e8eb7e93b
+      internalID: 1925884127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +219,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ossos_4: 1925884127
+      Ossos_3: 575083290
+      Ossos_0: -894253383
+      Ossos_2: 1952034270
+      Ossos_1: 44487451
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

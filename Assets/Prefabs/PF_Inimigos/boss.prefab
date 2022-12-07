@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4539254014440134662}
   - component: {fileID: 4539254014440134663}
-  - component: {fileID: 4539254014440134661}
   - component: {fileID: 4539254014440134665}
   - component: {fileID: 4539254014440134664}
-  - component: {fileID: 4539254014440134667}
   - component: {fileID: 4539254014440134666}
+  - component: {fileID: 4539254014440134667}
+  - component: {fileID: 4539254014440134661}
   m_Layer: 0
   m_Name: boss
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,28 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4539254014440134661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4539254014440134658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd386715374cb74aa6ea68b9a4b7a7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alvo: {fileID: 0}
-  velocidadeMovimento: 950
-  rigidbody: {fileID: 4539254014440134664}
-  animator: {fileID: 4539254014440134666}
-  distanciaMinima: 2
-  raioVisao: 14.22
-  layerAreaVisao:
-    serializedVersion: 2
-    m_Bits: 128
-  raioVisaoAnim: 12.81
 --- !u!70 &4539254014440134665
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -148,18 +126,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4539254014440134667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4539254014440134658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5575edd44a3e5da46afeb8cc89ae995e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &4539254014440134666
 Animator:
   serializedVersion: 4
@@ -180,3 +146,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4539254014440134667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539254014440134658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5575edd44a3e5da46afeb8cc89ae995e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4539254014440134661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539254014440134658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd386715374cb74aa6ea68b9a4b7a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  _bossCollider: {fileID: 0}
+  tempoTrigger: 0
+  velocidadeMovimento: 950
+  rigidbody: {fileID: 4539254014440134664}
+  animator: {fileID: 4539254014440134666}
+  distanciaMinima: 2
+  raioVisao: 14.22
+  layerAreaVisao:
+    serializedVersion: 2
+    m_Bits: 128
+  raioVisaoAnim: 12.81
+  posicaoInteracao: {x: 0, y: 0, z: 0}
