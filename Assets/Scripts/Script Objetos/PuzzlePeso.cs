@@ -8,7 +8,8 @@ public class PuzzlePeso : MonoBehaviour
     private int _qtd;
     private HingeJoint2D _objetoHJ;
     [SerializeField] float _tempoDesativarObjeto;
-    [SerializeField] GameObject[] _objetoPuzzle;
+    [SerializeField] GameObject[] _objetoResolucao;
+
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class PuzzlePeso : MonoBehaviour
             _qtd++;
             print(_qtd);
         }
-        if (_qtd == 3)
+        if (_qtd == _objetoResolucao.Length)
         {
             _objetoHJ.enabled = false;
             StartCoroutine("DesabilitarObjeto");
@@ -38,9 +39,10 @@ public class PuzzlePeso : MonoBehaviour
     private IEnumerator DesabilitarObjeto()
     {
         yield return new WaitForSeconds(_tempoDesativarObjeto);
-        foreach (var todoItens in _objetoPuzzle)
+        foreach (var todoItens in _objetoResolucao)
         {
             todoItens.gameObject.SetActive(false);
         }
+        this.gameObject.SetActive(false);
     }
 }
