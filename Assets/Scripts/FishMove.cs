@@ -67,7 +67,7 @@ public class FishMove : MonoBehaviour
     {
         if(collision.gameObject.tag == "Boost")
         {
-            velocidadeMov = 400;
+            velocidadeMov = 950;
         }
     }
 }

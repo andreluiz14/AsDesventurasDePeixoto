@@ -8,7 +8,7 @@ public class FimJogo : MonoBehaviour
     {
         if (outro.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Vitoria");
+            SceneManager.LoadScene("final");
         }
     }
 }
