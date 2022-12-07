@@ -26,6 +26,7 @@ public class PZ_Ventilador : MonoBehaviour
             TrocarSprite();
             DesativartEffector();
             GerenciadorObjetos.instance.estaComObjeto = false;
+            outro.gameObject.SetActive(false);
         }
     }
     private void PararMotor()
