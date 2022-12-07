@@ -8,11 +8,13 @@ public class PontoInicial : MonoBehaviour
     [SerializeField] GameObject _prefabObjeto;
     [SerializeField] BoxCollider2D _boxCollider2D;
     [SerializeField] Vector3 _AreaInteracao;
+    private bool _primeiraChamada = true;
     private void OnTriggerEnter2D(Collider2D outro)
     {
-        if (outro.CompareTag("Player"))
+        if (outro.CompareTag("Player") && _primeiraChamada)
         {
             _instanciarObjeto.InvocarMetodo();
+            _primeiraChamada = false;
         }
     }
     private void OnDrawGizmos()
